@@ -125,7 +125,7 @@ askGuess(const int low, const int high)
     return 0;
   }
 
-  if (guess < 1 || guess > high) {
+  if (guess < low || guess > high) {
     printf("Hey! %d is out of range [1..%d].\n", guess, high);
     return -1;
   }
